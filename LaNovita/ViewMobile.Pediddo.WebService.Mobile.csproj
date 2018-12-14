@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{920C1676-62CE-4995-8553-563A64106531}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ViewMobile.Pediddo.WebService.Mobile</RootNamespace>
+    <AssemblyName>ViewMobile.Pediddo.WebService.Mobile</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Identity.Owin.2.2.2\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.KeyVault.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Azure.KeyVault.Core.1.0.0\lib\net40\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Data.Edm.5.6.4\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Data.OData.5.6.4\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Data.Services.Client.5.6.4\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Unofficial.Microsoft.WindowsAzure.Diagnostics.2.4.0.0\lib\net40\Microsoft.WindowsAzure.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics.StorageUtility, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=6.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\WindowsAzure.Storage.6.1.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="SendGridPlus, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SendGridPlus.3.0\lib\net45\SendGridPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Smtpapi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\smtpapi.1.0.0\lib\Smtpapi.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.15.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.15\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.15.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.2.2.15\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Spatial, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\System.Spatial.5.6.4\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PediddoService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\ErrorRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErrorRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\NotificationPush.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NotificationPush.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Enumerations\DeviceCommunicationLogStatus.cs" />
+    <Compile Include="Class\Enumerations\ResponseCodeEnum.cs" />
+    <Compile Include="Class\Enumerations\ValidationCodeEnum.cs" />
+    <Compile Include="Class\Interfaces\ISerializableResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveAdviceListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveAdviceListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveAdviceRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveAdviceResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveBannerImageRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveBannerImageResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveBuyerDataResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveBuyerNotificationListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveBuyerNotificationListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveCalculateShippingCostRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveCalculateShippingCostResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveCategoryListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveCategoryListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveContentToShareRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveContentToShareResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveCustomerCreditRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveCustomerCreditResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveCustomerListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveCustomerListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveCustomerLocationListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveCustomerLocationListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveDealerAdviceListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveDealerAdviceListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveDealerAdviceRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveDealerAdviceResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveDealerAuthenticationRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveDealerAuthenticationResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveExtractCreditListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveExtractCreditResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListCategoryResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListDealerRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveListDealerResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListMyBuyerResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListMyNotificationResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListMyOrderDashboardRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveListMyOrderDashboardResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListMyOrderRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveListMyOrderResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListProductRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveListProductResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListPromotionDetailResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListPromotionResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListSegmentResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListSupplierByAroundRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveListSupplierByAroundResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListSupplierByBuyerResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListSupplierResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveMeterCategoryListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveMeterCategoryListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveMyBuyerDetailResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveMyLastOrderResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveMyOrderDetailResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveMyOrderListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveMyOrderListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveOpportunityListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveOpportunityListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveOrderListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveOrderListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveOrderRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveOrderResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveProductListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveProductListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveReportSaleRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveReportSaleResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveSellerAdviceListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveSellerAdviceListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveSellerAdviceRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveSellerAdviceResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveSellerAuthenticationRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveSellerAuthenticationResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveSellerCustomerListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveSellerCustomerListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveSellerListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveSellerListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveSellerOrderListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveSellerOrderListResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveUserAuthenticationRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveUserAuthenticationResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveVisitStatusListRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveVisitStatusListResponse.cs" />
+    <Compile Include="Class\Messages\SendAdjustCustomerLocationRequest.cs" />
+    <Compile Include="Class\Messages\SendAdjustCustomerLocationResponse.cs" />
+    <Compile Include="Class\Messages\SendAdviceAnswerRequest.cs" />
+    <Compile Include="Class\Messages\SendAdviceAnswerResponse.cs" />
+    <Compile Include="Class\Messages\SendAssignOrderRequest.cs" />
+    <Compile Include="Class\Messages\SendAssignOrderResponse.cs" />
+    <Compile Include="Class\Messages\SendBuyerProfilePhotoRequest.cs" />
+    <Compile Include="Class\Messages\SendBuyerProfilePhotoResponse.cs" />
+    <Compile Include="Class\Messages\SendCalculateMeterRequest.cs" />
+    <Compile Include="Class\Messages\SendCalculateMeterResponse.cs" />
+    <Compile Include="Class\Messages\SendCallMeResponse.cs" />
+    <Compile Include="Class\Messages\SendCancelMyOrderRequest.cs" />
+    <Compile Include="Class\Messages\SendCancelMyOrderResponse.cs" />
+    <Compile Include="Class\Messages\SendChangePasswordResponse.cs" />
+    <Compile Include="Class\Messages\SendContentToShareRequest.cs" />
+    <Compile Include="Class\Messages\SendContentToShareResponse.cs" />
+    <Compile Include="Class\Messages\SendCreateCustomerLocationRequest.cs" />
+    <Compile Include="Class\Messages\SendCreateCustomerLocationResponse.cs" />
+    <Compile Include="Class\Messages\SendCreateJapoUserOrderRequest.cs" />
+    <Compile Include="Class\Messages\SendCreateJapoUserOrderResponse.cs" />
+    <Compile Include="Class\Messages\SendCreateMyOrderRequest.cs" />
+    <Compile Include="Class\Messages\SendCreateMyOrderResponse.cs" />
+    <Compile Include="Class\Messages\SendCreateOrderInteractionRequest.cs" />
+    <Compile Include="Class\Messages\SendCreateOrderInteractionResponse.cs" />
+    <Compile Include="Class\Messages\SendCustomerCreditPurchaseRequest.cs" />
+    <Compile Include="Class\Messages\SendCustomerCreditPurchaseResponse.cs" />
+    <Compile Include="Class\Messages\SendCustomerRegistrationRequest.cs" />
+    <Compile Include="Class\Messages\SendCustomerRegistrationResponse.cs" />
+    <Compile Include="Class\Messages\SendDealerAdviceAnswerRequest.cs" />
+    <Compile Include="Class\Messages\SendDealerAdviceAnswerResponse.cs" />
+    <Compile Include="Class\Messages\SendDeleteLocationRequest.cs" />
+    <Compile Include="Class\Messages\SendDeleteLocationResponse.cs" />
+    <Compile Include="Class\Messages\SendDeliveryHelpRequest.cs" />
+    <Compile Include="Class\Messages\SendDeliveryHelpResponse.cs" />
+    <Compile Include="Class\Messages\SendForgotMyPasswordResponse.cs" />
+    <Compile Include="Class\Messages\SendLinkUpResponse.cs" />
+    <Compile Include="Class\Messages\SendMePromotionResponse.cs" />
+    <Compile Include="Class\Messages\SendMyLastOrderResponse.cs" />
+    <Compile Include="Class\Messages\SendNewBuyerResponse.cs" />
+    <Compile Include="Class\Messages\SendNewCustomerReVisitRequest.cs" />
+    <Compile Include="Class\Messages\SendNewCustomerReVisitResponse.cs" />
+    <Compile Include="Class\Messages\SendNewJapoUserRequest.cs" />
+    <Compile Include="Class\Messages\SendNewJapoUserResponse.cs" />
+    <Compile Include="Class\Messages\SendNewMyOrderProductResponse.cs" />
+    <Compile Include="Class\Messages\SendNewMyOrderRequest.cs" />
+    <Compile Include="Class\Messages\SendNewMyOrderResponse.cs" />
+    <Compile Include="Class\Messages\SendNewOpportunityRequest.cs" />
+    <Compile Include="Class\Messages\SendNewOpportunityResponse.cs" />
+    <Compile Include="Class\Messages\SendNewRegistrationRequest.cs" />
+    <Compile Include="Class\Messages\SendNewRegistrationResponse.cs" />
+    <Compile Include="Class\Messages\SendNewSellerOrderRequest.cs" />
+    <Compile Include="Class\Messages\SendNewSellerOrderResponse.cs" />
+    <Compile Include="Class\Messages\SendNewUserRegistrationResponse.cs" />
+    <Compile Include="Class\Messages\SendNotificationReadResponse.cs" />
+    <Compile Include="Class\Messages\SendPromotionAnswerResponse.cs" />
+    <Compile Include="Class\Messages\SendProposalReplyResponse.cs" />
+    <Compile Include="Class\Messages\SendRegisterNewVisitRequest.cs" />
+    <Compile Include="Class\Messages\SendRegisterNewVisitResponse.cs" />
+    <Compile Include="Class\Messages\SendRegisterProspectiveCustomerRequest.cs" />
+    <Compile Include="Class\Messages\SendRegisterProspectiveCustomerResponse.cs" />
+    <Compile Include="Class\Messages\SendRemoveBuyerSupplierResponse.cs" />
+    <Compile Include="Class\Messages\SendSellerAdviceAnswerRequest.cs" />
+    <Compile Include="Class\Messages\SendSellerAdviceAnswerResponse.cs" />
+    <Compile Include="Class\Messages\SendSellerLocationRequest.cs" />
+    <Compile Include="Class\Messages\SendSellerLocationResponse.cs" />
+    <Compile Include="Class\Messages\SendUpdateBuyerDataRequest.cs" />
+    <Compile Include="Class\Messages\SendUpdateBuyerDataResponse.cs" />
+    <Compile Include="Class\Messages\SendUpdateBuyerResponse.cs" />
+    <Compile Include="Class\Messages\SendUpdateCustomerLocationRequest.cs" />
+    <Compile Include="Class\Messages\SendUpdateCustomerLocationResponse.cs" />
+    <Compile Include="Class\Messages\SendUpdateOrderProductRequest.cs" />
+    <Compile Include="Class\Messages\SendUpdateOrderProductResponse.cs" />
+    <Compile Include="Class\Messages\SendUpdateSellerCustomerRequest.cs" />
+    <Compile Include="Class\Messages\SendUpdateSellerCustomerResponse.cs" />
+    <Compile Include="Class\Messages\SendWorkingDayRequest.cs" />
+    <Compile Include="Class\Messages\SendWorkingDayResponse.cs" />
+    <Compile Include="Class\Messages\ServiceRequestBase.cs" />
+    <Compile Include="Class\Messages\ServiceResponseBase.cs" />
+    <Compile Include="Class\Util\BuyerUserValidator.cs" />
+    <Compile Include="Class\Util\DealerUserValidator.cs" />
+    <Compile Include="Class\Util\ErrorResponse.cs" />
+    <Compile Include="Class\Util\PushMessageHandler.cs" />
+    <Compile Include="Class\Util\SellerUserValidator.cs" />
+    <Compile Include="PediddoService.svc.cs">
+      <DependentUpon>PediddoService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IPediddoService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Class\Messages\SendMinimumVersionResponse.cs" />
+    <Compile Include="Class\Messages\SendMinimumVersionRequest.cs" />
+    <Compile Include="Class\Messages\SendLinkUpRequest.cs" />
+    <Compile Include="Class\Messages\ResetBuyerSellerCodelinkResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveListSupplierRequest.cs" />
+    <Compile Include="Class\Messages\SendCallMeRequest.cs" />
+    <Compile Include="Class\Messages\SendSupplierRecommendationRequest.cs" />
+    <Compile Include="Class\Messages\SendSupplierRecommendationResponse.cs" />
+    <Compile Include="Class\Messages\SendChangePasswordRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveListMyNotificationRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveMyLastOrderRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveProductListCatalogRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveProductListCatalogResponse.cs" />
+    <Compile Include="Class\Messages\ReceiveUpdateDevicePushTokenRequest.cs" />
+    <Compile Include="Class\Messages\ReceiveUpdateDevicePushTokenResponse.cs" />
+    <Compile Include="Class\Messages\SendNewBillResponse.cs" />
+    <Compile Include="Class\Messages\SendNewBillRequest.cs" />
+    <Compile Include="Class\Messages\UpdateBillRequest.cs" />
+    <Compile Include="Class\Messages\UpdateBillResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\Lanovitaapi - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\Lanovitaapi - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\ErrorRes.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ErrorRes.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ViewMobile.Pediddo.Core.Data\ViewMobile.Pediddo.Core.Data.csproj">
+      <Project>{5198106c-9de3-44df-9c13-d60f00324d61}</Project>
+      <Name>ViewMobile.Pediddo.Core.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewMobile.Pediddo.Core\ViewMobile.Pediddo.Core.csproj">
+      <Project>{e5052cc9-0a3f-415a-b170-0d974e6fc429}</Project>
+      <Name>ViewMobile.Pediddo.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\NotificationPush.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>NotificationPush.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7066</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53740/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

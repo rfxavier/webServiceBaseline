@@ -1,0 +1,72 @@
+﻿using System;
+using System.Text;
+
+namespace ViewMobile.Pediddo.WebService.Mobile.Messages
+{
+    public class SendCallMeResponse : ServiceResponseBase
+    {
+        public int MyOrderID;
+        public string ReceiptCode;
+
+        public SendCallMeResponse()
+        {
+            ReceiptCode = "";
+        }
+
+        #region Methods
+
+        public string Apple()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("<?xml version='1.0' encoding='UTF-8'?>");
+            sb.Append("<!DOCTYPE plist PUBLIC '-//Apple//DTD PLIST 1.0//EN' 'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>");
+            sb.Append("<plist version='1.0'>");
+            sb.Append("<array>");
+
+            sb.Append("<dict>");
+
+            if (this.MyOrderID > 0)
+            {
+                sb.Append("     <key>MyOrderID</key>");
+                sb.AppendFormat("     <string>{0}</string>", this.MyOrderID.ToString());
+                sb.Append("     <key>ReceiptCode</key>");
+                sb.AppendFormat("     <string>{0}</string>", this.ReceiptCode);
+            }
+
+
+            ///status
+            sb.Append("     <key>Status</key>");
+            sb.AppendFormat("     <string>{0}</string>", this.Status.ToString());
+            sb.Append("     <key>ErrorCode</key>");
+            sb.AppendFormat("     <string>{0}</string>", this.ErrorCode);
+            sb.Append("     <key>ErrorMessage</key>");
+            sb.AppendFormat("     <string>{0}</string>", this.ErrorMessage);
+
+
+
+
+            sb.Append("</dict>");
+
+
+            sb.Append("</array>");
+            sb.Append("</plist>");
+
+            Playlist = sb.ToString();
+
+            return sb.ToString();
+        }
+
+        public string ToErrorString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Customer Response:" + Environment.NewLine);
+            sb.Append("============================= " + Environment.NewLine);
+            sb.Append("Status              = " + this.Status.ToString() + Environment.NewLine);
+            sb.Append("ErrorCode           = " + this.ErrorCode + Environment.NewLine);
+            sb.Append("ErrorMessage        = " + this.ErrorMessage + Environment.NewLine);
+            return sb.ToString();
+        }
+        #endregion
+    }
+}

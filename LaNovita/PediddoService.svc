@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ViewMobile.Pediddo.WebService.Mobile.PediddoService" CodeBehind="PediddoService.svc.cs" %>
