@@ -4,17 +4,17 @@ using Moq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using ViewT.Condominio.Domain.Core.Commands;
-using ViewT.Condominio.Domain.Core.DomainNotification.Events;
-using ViewT.Condominio.Domain.Main.Commands.Handlers;
-using ViewT.Condominio.Domain.Main.Entities;
-using ViewT.Condominio.Domain.Main.Enums;
-using ViewT.Condominio.Domain.Main.Interfaces;
-using ViewT.Condominio.Domain.Tests.Unit.Main.Commands.Builders;
-using ViewT.Condominio.Domain.Tests.Unit.Main.Entities.Builders;
+using ViewT.Crediario.Domain.Core.Commands;
+using ViewT.Crediario.Domain.Core.DomainNotification.Events;
+using ViewT.Crediario.Domain.Main.Commands.Handlers;
+using ViewT.Crediario.Domain.Main.Entities;
+using ViewT.Crediario.Domain.Main.Enums;
+using ViewT.Crediario.Domain.Main.Interfaces;
+using ViewT.Crediario.Domain.Tests.Unit.Main.Commands.Builders;
+using ViewT.Crediario.Domain.Tests.Unit.Main.Entities.Builders;
 using Xunit;
 
-namespace ViewT.Condominio.Domain.Tests.Unit.Main.Commands.Handlers
+namespace ViewT.Crediario.Domain.Tests.Unit.Main.Commands.Handlers
 {
     public class UserAuthenticateCommandHandlerTests
     {

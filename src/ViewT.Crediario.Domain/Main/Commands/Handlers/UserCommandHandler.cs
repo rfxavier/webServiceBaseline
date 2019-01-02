@@ -22,16 +22,22 @@ namespace ViewT.Crediario.Domain.Main.Commands.Handlers
         private readonly IPersonRepository _personRepository;
         private readonly IDeviceRepository _deviceRepository;
         private readonly ITokenRepository _tokenRepository;
+        private readonly IPasswordService _passwordService;
+        private readonly IValidationService _validationService;
 
         public UserCommandHandler(
             IPersonRepository personRepository,
             IDeviceRepository deviceRepository,
             ITokenRepository tokenRepository,
+            IPasswordService passwordService,
+            IValidationService validationService,
             IUnitOfWork uow, IDomainNotificationHandler<DomainNotification> notifications) : base(uow, notifications)
         {
             _personRepository = personRepository;
             _deviceRepository = deviceRepository;
             _tokenRepository = tokenRepository;
+            _passwordService = passwordService;
+            _validationService = validationService;
         }
 
         public ICommandResult Handle(UserRegisterCommand command)
@@ -149,45 +155,45 @@ namespace ViewT.Crediario.Domain.Main.Commands.Handlers
 
             _personRepository.Update(person);
 
-            IEnumerable<CondoPerson> condoPersonList = _condoPersonRepository.GetByPersonIdIncludingCondo(person.PersonId);
+            //IEnumerable<CondoPerson> condoPersonList = _condoPersonRepository.GetByPersonIdIncludingCondo(person.PersonId);
 
-            var condos = condoPersonList.Select(x => new UserAuthenticateCommandResult.Condo()
-            {
-                CondoId = x.Condo.CondoId.ToString(),
-                CondoName = x.Condo.Name,
-                AddressApartment = x.AddressApartment,
-                AddressBlock = x.AddressBlock,
-                AddressComplement = x.AddressComplement,
-                Admin = x.Admin,
-                Visitor = false,
-                Resident = x.Resident,
-                ResidentCode = x.ResidentCode
-            }).ToList();
+            //var condos = condoPersonList.Select(x => new UserAuthenticateCommandResult.Condo()
+            //{
+            //    CondoId = x.Condo.CondoId.ToString(),
+            //    CondoName = x.Condo.Name,
+            //    AddressApartment = x.AddressApartment,
+            //    AddressBlock = x.AddressBlock,
+            //    AddressComplement = x.AddressComplement,
+            //    Admin = x.Admin,
+            //    Visitor = false,
+            //    Resident = x.Resident,
+            //    ResidentCode = x.ResidentCode
+            //}).ToList();
 
-            var personVisitorList = _personVisitorRepository.GetByPersonId(person.PersonId);
+            //var personVisitorList = _personVisitorRepository.GetByPersonId(person.PersonId);
 
-            foreach (var personVisitor in personVisitorList)
-            {
-                if (condos.All(c => c.CondoId != personVisitor.Condo.CondoId.ToString()))
-                {
-                    condos.Add(new UserAuthenticateCommandResult.Condo()
-            {
-                        CondoId = personVisitor.Condo.CondoId.ToString(),
-                        CondoName = personVisitor.Condo.Name,
-                        AddressApartment = string.Empty,
-                        AddressBlock = string.Empty,
-                        AddressComplement = string.Empty,
-                        Admin = false,
-                        Visitor = true,
-                        Resident = false,
-                        ResidentCode = string.Empty
-                    });
-            }
-            else
-            {
-                    //condos.FirstOrDefault(c => c.CondoId == personVisitor.Condo.CondoId.ToString()).Visitor = true;
-                }
-            }
+            //foreach (var personVisitor in personVisitorList)
+            //{
+            //    if (condos.All(c => c.CondoId != personVisitor.Condo.CondoId.ToString()))
+            //    {
+            //        condos.Add(new UserAuthenticateCommandResult.Condo()
+            //{
+            //            CondoId = personVisitor.Condo.CondoId.ToString(),
+            //            CondoName = personVisitor.Condo.Name,
+            //            AddressApartment = string.Empty,
+            //            AddressBlock = string.Empty,
+            //            AddressComplement = string.Empty,
+            //            Admin = false,
+            //            Visitor = true,
+            //            Resident = false,
+            //            ResidentCode = string.Empty
+            //        });
+            //}
+            //else
+            //{
+            //        //condos.FirstOrDefault(c => c.CondoId == personVisitor.Condo.CondoId.ToString()).Visitor = true;
+            //    }
+            //}
 
             return new UserAuthenticateCommandResult()
             {
@@ -196,8 +202,8 @@ namespace ViewT.Crediario.Domain.Main.Commands.Handlers
                 PushToken = person.PushToken,
                 PhoneNumber = person.PhoneNumber,
                 DocumentNumber = person.DocumentNumber,
-                Email = person.Email,
-                Condos = condos
+                Email = person.Email
+                //Condos = condos
             };
         }
 

@@ -9,6 +9,9 @@
 //------------------------------------------------------------------------------
 
 namespace ViewT.Crediario.Domain.Main.Resources {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -19,7 +22,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Messages {
+    internal class Messages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -33,7 +36,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
+        internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ViewT.Crediario.Domain.Main.Resources.Messages", typeof(Messages).Assembly);
@@ -48,7 +51,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -60,7 +63,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to AppImageId inválido.
         /// </summary>
-        public static string AppImageIdInvalid {
+        internal static string AppImageIdInvalid {
             get {
                 return ResourceManager.GetString("AppImageIdInvalid", resourceCulture);
             }
@@ -69,7 +72,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to AppImageId não informado.
         /// </summary>
-        public static string AppImageIdRequired {
+        internal static string AppImageIdRequired {
             get {
                 return ResourceManager.GetString("AppImageIdRequired", resourceCulture);
             }
@@ -78,7 +81,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Imagem não encontrada.
         /// </summary>
-        public static string AppImageNotFound {
+        internal static string AppImageNotFound {
             get {
                 return ResourceManager.GetString("AppImageNotFound", resourceCulture);
             }
@@ -87,7 +90,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Nome do condomínio tem menos de 6 caracteres.
         /// </summary>
-        public static string CondoAddNewCondoNameMoreThan6 {
+        internal static string CondoAddNewCondoNameMoreThan6 {
             get {
                 return ResourceManager.GetString("CondoAddNewCondoNameMoreThan6", resourceCulture);
             }
@@ -96,7 +99,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Nome do condomínio não informado.
         /// </summary>
-        public static string CondoAddNewCondoNameRequired {
+        internal static string CondoAddNewCondoNameRequired {
             get {
                 return ResourceManager.GetString("CondoAddNewCondoNameRequired", resourceCulture);
             }
@@ -105,7 +108,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Pessoa não possui condomínio vinculado.
         /// </summary>
-        public static string CondoGenerateCodePersonHasNoLinkedCondo {
+        internal static string CondoGenerateCodePersonHasNoLinkedCondo {
             get {
                 return ResourceManager.GetString("CondoGenerateCodePersonHasNoLinkedCondo", resourceCulture);
             }
@@ -114,7 +117,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Pessoa não possui status de Administrador.
         /// </summary>
-        public static string CondoGenerateCodePersonIsNotAdmin {
+        internal static string CondoGenerateCodePersonIsNotAdmin {
             get {
                 return ResourceManager.GetString("CondoGenerateCodePersonIsNotAdmin", resourceCulture);
             }
@@ -123,7 +126,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Email não é válido.
         /// </summary>
-        public static string EmailProper {
+        internal static string EmailProper {
             get {
                 return ResourceManager.GetString("EmailProper", resourceCulture);
             }
@@ -132,7 +135,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Email não informado.
         /// </summary>
-        public static string EmailRequired {
+        internal static string EmailRequired {
             get {
                 return ResourceManager.GetString("EmailRequired", resourceCulture);
             }
@@ -141,7 +144,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Imagem não encontrada.
         /// </summary>
-        public static string ImageNotFound {
+        internal static string ImageNotFound {
             get {
                 return ResourceManager.GetString("ImageNotFound", resourceCulture);
             }
@@ -150,7 +153,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Requisição inválida.
         /// </summary>
-        public static string InvalidCommandRequested {
+        internal static string InvalidCommandRequested {
             get {
                 return ResourceManager.GetString("InvalidCommandRequested", resourceCulture);
             }
@@ -159,7 +162,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Código de vinculação não encontrado.
         /// </summary>
-        public static string PersonLinkCondoCodeCondoCodeNotFound {
+        internal static string PersonLinkCondoCodeCondoCodeNotFound {
             get {
                 return ResourceManager.GetString("PersonLinkCondoCodeCondoCodeNotFound", resourceCulture);
             }
@@ -168,7 +171,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Código de vinculação não informado.
         /// </summary>
-        public static string PersonLinkCondoCodeCondoCodeRequired {
+        internal static string PersonLinkCondoCodeCondoCodeRequired {
             get {
                 return ResourceManager.GetString("PersonLinkCondoCodeCondoCodeRequired", resourceCulture);
             }
@@ -177,7 +180,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Pessoa já possui condomínio vinculado.
         /// </summary>
-        public static string PersonLinkCondoCodePersonHasAlreadyLinkedCondo {
+        internal static string PersonLinkCondoCodePersonHasAlreadyLinkedCondo {
             get {
                 return ResourceManager.GetString("PersonLinkCondoCodePersonHasAlreadyLinkedCondo", resourceCulture);
             }
@@ -186,7 +189,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Documento não informado.
         /// </summary>
-        public static string PersonUpdateProfileDocumentNumberRequired {
+        internal static string PersonUpdateProfileDocumentNumberRequired {
             get {
                 return ResourceManager.GetString("PersonUpdateProfileDocumentNumberRequired", resourceCulture);
             }
@@ -195,7 +198,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Nome não informado.
         /// </summary>
-        public static string PersonUpdateProfileNameRequired {
+        internal static string PersonUpdateProfileNameRequired {
             get {
                 return ResourceManager.GetString("PersonUpdateProfileNameRequired", resourceCulture);
             }
@@ -204,7 +207,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Telefone não informado.
         /// </summary>
-        public static string PersonUpdateProfilePhoneNumberRequired {
+        internal static string PersonUpdateProfilePhoneNumberRequired {
             get {
                 return ResourceManager.GetString("PersonUpdateProfilePhoneNumberRequired", resourceCulture);
             }
@@ -213,7 +216,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Id do veículo não informado.
         /// </summary>
-        public static string PersonVehicleIdRequired {
+        internal static string PersonVehicleIdRequired {
             get {
                 return ResourceManager.GetString("PersonVehicleIdRequired", resourceCulture);
             }
@@ -222,7 +225,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Placa do veículo não informada.
         /// </summary>
-        public static string PersonVehicleLicensePlateRequired {
+        internal static string PersonVehicleLicensePlateRequired {
             get {
                 return ResourceManager.GetString("PersonVehicleLicensePlateRequired", resourceCulture);
             }
@@ -231,16 +234,25 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Modelo do veículo não informado.
         /// </summary>
-        public static string PersonVehicleModelRequired {
+        internal static string PersonVehicleModelRequired {
             get {
                 return ResourceManager.GetString("PersonVehicleModelRequired", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to O push token é obrigatório.
+        /// </summary>
+        internal static string PushTokenRequired {
+            get {
+                return ResourceManager.GetString("PushTokenRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SerialKey não informado.
         /// </summary>
-        public static string SerialKeyRequired {
+        internal static string SerialKeyRequired {
             get {
                 return ResourceManager.GetString("SerialKeyRequired", resourceCulture);
             }
@@ -249,7 +261,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Imagem não informada.
         /// </summary>
-        public static string UserAppImageBase64StringImageRequired {
+        internal static string UserAppImageBase64StringImageRequired {
             get {
                 return ResourceManager.GetString("UserAppImageBase64StringImageRequired", resourceCulture);
             }
@@ -258,7 +270,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Imagem não encontrada.
         /// </summary>
-        public static string UserAppImageNotFound {
+        internal static string UserAppImageNotFound {
             get {
                 return ResourceManager.GetString("UserAppImageNotFound", resourceCulture);
             }
@@ -267,7 +279,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Usuário ou senha não conferem. Login falhou..
         /// </summary>
-        public static string UserAuthenticateLoginFailed {
+        internal static string UserAuthenticateLoginFailed {
             get {
                 return ResourceManager.GetString("UserAuthenticateLoginFailed", resourceCulture);
             }
@@ -276,7 +288,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Senha não informada.
         /// </summary>
-        public static string UserAuthenticatePasswordRequired {
+        internal static string UserAuthenticatePasswordRequired {
             get {
                 return ResourceManager.GetString("UserAuthenticatePasswordRequired", resourceCulture);
             }
@@ -285,7 +297,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Usuário está desabilitado.
         /// </summary>
-        public static string UserAuthenticateUserIsInactive {
+        internal static string UserAuthenticateUserIsInactive {
             get {
                 return ResourceManager.GetString("UserAuthenticateUserIsInactive", resourceCulture);
             }
@@ -294,7 +306,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Usuário não informado.
         /// </summary>
-        public static string UserAuthenticateUserRequired {
+        internal static string UserAuthenticateUserRequired {
             get {
                 return ResourceManager.GetString("UserAuthenticateUserRequired", resourceCulture);
             }
@@ -303,7 +315,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Device não está vinculado a usuário.
         /// </summary>
-        public static string UserChangePasswordDeviceDoesNotBelongToUser {
+        internal static string UserChangePasswordDeviceDoesNotBelongToUser {
             get {
                 return ResourceManager.GetString("UserChangePasswordDeviceDoesNotBelongToUser", resourceCulture);
             }
@@ -312,7 +324,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Device não encontrado.
         /// </summary>
-        public static string UserChangePasswordDeviceNotFound {
+        internal static string UserChangePasswordDeviceNotFound {
             get {
                 return ResourceManager.GetString("UserChangePasswordDeviceNotFound", resourceCulture);
             }
@@ -321,7 +333,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Identification não informado.
         /// </summary>
-        public static string UserChangePasswordIdentificationRequired {
+        internal static string UserChangePasswordIdentificationRequired {
             get {
                 return ResourceManager.GetString("UserChangePasswordIdentificationRequired", resourceCulture);
             }
@@ -330,7 +342,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Email não é válido.
         /// </summary>
-        public static string UserForgotPasswordEmailProper {
+        internal static string UserForgotPasswordEmailProper {
             get {
                 return ResourceManager.GetString("UserForgotPasswordEmailProper", resourceCulture);
             }
@@ -339,7 +351,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Email não informado.
         /// </summary>
-        public static string UserForgotPasswordEmailRequired {
+        internal static string UserForgotPasswordEmailRequired {
             get {
                 return ResourceManager.GetString("UserForgotPasswordEmailRequired", resourceCulture);
             }
@@ -348,7 +360,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Usuário não encontrado.
         /// </summary>
-        public static string UserNotFound {
+        internal static string UserNotFound {
             get {
                 return ResourceManager.GetString("UserNotFound", resourceCulture);
             }
@@ -357,7 +369,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Email já cadastrado.
         /// </summary>
-        public static string UserRegisterEmailAlreadyTaken {
+        internal static string UserRegisterEmailAlreadyTaken {
             get {
                 return ResourceManager.GetString("UserRegisterEmailAlreadyTaken", resourceCulture);
             }
@@ -366,7 +378,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Senha não é válida.
         /// </summary>
-        public static string UserRegisterPasswordProper {
+        internal static string UserRegisterPasswordProper {
             get {
                 return ResourceManager.GetString("UserRegisterPasswordProper", resourceCulture);
             }
@@ -375,7 +387,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Senha não informada.
         /// </summary>
-        public static string UserRegisterPasswordRequired {
+        internal static string UserRegisterPasswordRequired {
             get {
                 return ResourceManager.GetString("UserRegisterPasswordRequired", resourceCulture);
             }
@@ -384,7 +396,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Veículo não encontrado.
         /// </summary>
-        public static string UserVehicleNotFound {
+        internal static string UserVehicleNotFound {
             get {
                 return ResourceManager.GetString("UserVehicleNotFound", resourceCulture);
             }

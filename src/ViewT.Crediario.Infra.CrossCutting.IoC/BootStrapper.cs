@@ -9,7 +9,7 @@ using ViewT.Crediario.Domain.Main.Commands.Inputs;
 using ViewT.Crediario.Domain.Main.Events;
 using ViewT.Crediario.Domain.Main.Interfaces;
 using ViewT.Crediario.Infra.Data.Context;
-using ViewT.Crediario.Infra.Data.RepositoryFake;
+//using ViewT.Crediario.Infra.Data.RepositoryFake;
 using ViewT.Crediario.Infra.Data.UoW;
 
 namespace ViewT.Crediario.Infra.CrossCutting.IoC
@@ -35,16 +35,16 @@ namespace ViewT.Crediario.Infra.CrossCutting.IoC
             container.Register<ICommandHandler<UserChangePasswordCommand>, UserCommandHandler>(Lifestyle.Scoped);
 
             //Events
-            container.Register<IHandler<UserForgotPasswordRequestedEvent>, UserForgotPasswordRequestedEventHandlerForEmailNotification>(Lifestyle.Scoped);
+            container.Register<IHandler<UserForgotPasswordRequestedEvent>, UserForgotPasswordRequestedEventHandler>(Lifestyle.Scoped);
 
             // Infra Dados
             container.Register<CrediarioContext>(Lifestyle.Scoped);
 
-            container.Register<IVersionRepository, VersionFakeRepository>(Lifestyle.Scoped);
-            container.Register<IPersonRepository, UserFakeRepository>(Lifestyle.Scoped);
-            container.Register<IDeviceRepository, DeviceFakeRepository>(Lifestyle.Scoped);
-            container.Register<ITokenRepository, TokenFakeRepository>(Lifestyle.Scoped);
-            container.Register<IEmailNotificationRepository, EmailNotificationFakeRepository>(Lifestyle.Scoped);
+            //container.Register<IVersionRepository, VersionFakeRepository>(Lifestyle.Scoped);
+            //container.Register<IPersonRepository, UserFakeRepository>(Lifestyle.Scoped);
+            //container.Register<IDeviceRepository, DeviceFakeRepository>(Lifestyle.Scoped);
+            //container.Register<ITokenRepository, TokenFakeRepository>(Lifestyle.Scoped);
+            //container.Register<IEmailNotificationRepository, EmailNotificationFakeRepository>(Lifestyle.Scoped);
         }
     }
 }

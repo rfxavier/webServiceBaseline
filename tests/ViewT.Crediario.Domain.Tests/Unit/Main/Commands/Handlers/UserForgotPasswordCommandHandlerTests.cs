@@ -14,7 +14,7 @@ using ViewT.Crediario.Domain.Tests.Unit.Main.Commands.Builders;
 using ViewT.Crediario.Domain.Tests.Unit.Main.Entities.Builders;
 using Xunit;
 
-namespace ViewT.Condominio.Domain.Tests.Unit.Main.Commands.Handlers
+namespace ViewT.Crediario.Domain.Tests.Unit.Main.Commands.Handlers
 {
     public class UserForgotPasswordCommandHandlerTests
     {

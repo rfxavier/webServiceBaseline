@@ -40,6 +40,7 @@ namespace ViewT.Crediario.Domain.Main.Entities
         public string Email { get; private set; }
         public string Password { get; private set; }
         public string SerialKey { get; private set; }
+        public string PushToken { get; private set; }
 
         public bool IsBlocked { get; private set; }
         public bool Admin { get; private set; }
@@ -79,6 +80,7 @@ namespace ViewT.Crediario.Domain.Main.Entities
             AddressApartment = addressApartment;
             AddressComplement = addressComplement;
         }
+
         public void EnableUser()
         {
             PersonUserStatus = PersonUserStatus.Active;
@@ -111,5 +113,11 @@ namespace ViewT.Crediario.Domain.Main.Entities
         {
             Admin = false;
         }
+
+        public void SetPushToken(string pushToken)
+        {
+            PushToken = pushToken;
+        }
+        
     }
 }

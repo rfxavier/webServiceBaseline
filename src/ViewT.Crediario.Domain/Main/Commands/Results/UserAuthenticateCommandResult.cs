@@ -12,6 +12,6 @@ namespace ViewT.Crediario.Domain.Main.Commands.Results
         public bool Admin { get; set; }
         public bool Visitor { get; set; }
         public bool Resident { get; set; }
-        public string Document { get; set; }
+        public string DocumentNumber { get; set; }
     }
 }

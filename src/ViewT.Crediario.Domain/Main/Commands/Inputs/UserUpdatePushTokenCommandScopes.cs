@@ -1,4 +1,7 @@
-﻿namespace ViewT.Crediario.Domain.Main.Commands.Inputs
+﻿using ViewT.Crediario.Domain.Core.DomainNotification;
+using ViewT.Crediario.Domain.Main.Entities;
+
+namespace ViewT.Crediario.Domain.Main.Commands.Inputs
 {
     public static class UserUpdatePushTokenCommandScopes
     {

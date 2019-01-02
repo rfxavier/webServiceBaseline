@@ -9,5 +9,6 @@ namespace ViewT.Crediario.Domain.Main.Interfaces
         Person GetByUserNameAndPassword(string userName, string userPassword);
         Person Update(Person person);
         Person GetBySerialKey(string serialKey);
+        Person GetByEmailAndPassword(string email, string userPassword);
     }
 }

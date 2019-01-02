@@ -228,4 +228,7 @@
   <data name="PersonLinkCondoCodeCondoCodeNotFound" xml:space="preserve">
     <value>Código de vinculação não encontrado</value>
   </data>
+  <data name="PushTokenRequired" xml:space="preserve">
+    <value>O push token é obrigatório</value>
+  </data>
 </root>

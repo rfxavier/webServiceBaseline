@@ -1,4 +1,7 @@
-﻿namespace ViewT.Crediario.Domain.Main.Events
+﻿using ViewT.Crediario.Domain.Core.DomainNotification;
+using ViewT.Crediario.Domain.Main.Interfaces;
+
+namespace ViewT.Crediario.Domain.Main.Events
 {
     public class UserForgotPasswordRequestedEventHandler : IHandler<UserForgotPasswordRequestedEvent>
     {

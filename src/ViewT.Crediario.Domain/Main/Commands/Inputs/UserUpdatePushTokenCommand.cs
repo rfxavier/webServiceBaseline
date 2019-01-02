@@ -1,4 +1,6 @@
-﻿namespace ViewT.Crediario.Domain.Main.Commands.Inputs
+﻿using ViewT.Crediario.Domain.Core.Commands;
+
+namespace ViewT.Crediario.Domain.Main.Commands.Inputs
 {
     public class UserUpdatePushTokenCommand: ICommand
     {

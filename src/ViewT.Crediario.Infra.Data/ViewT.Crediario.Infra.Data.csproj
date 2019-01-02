@@ -55,11 +55,6 @@
     <Compile Include="EntityConfig\TokenConfig.cs" />
     <Compile Include="EntityConfig\VersionConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositoryFake\DeviceFakeRepository.cs" />
-    <Compile Include="RepositoryFake\EmailNotificationFakeRepository.cs" />
-    <Compile Include="RepositoryFake\TokenFakeRepository.cs" />
-    <Compile Include="RepositoryFake\UserFakeRepository.cs" />
-    <Compile Include="RepositoryFake\VersionFakeRepository.cs" />
     <Compile Include="Repository\Repository.cs" />
     <Compile Include="UoW\UnitOfWork.cs" />
   </ItemGroup>
@@ -67,10 +62,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\tests\ViewT.Crediario.Domain.Tests\ViewT.Crediario.Domain.Tests.csproj">
-      <Project>{de660c6c-dd7f-4f83-87db-70ce23ae9bc7}</Project>
-      <Name>ViewT.Crediario.Domain.Tests</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ViewT.Crediario.Domain.Core\ViewT.Crediario.Domain.Core.csproj">
       <Project>{0b4091bf-c27d-4809-9882-144cecaccb1b}</Project>
       <Name>ViewT.Crediario.Domain.Core</Name>
@@ -79,6 +70,9 @@
       <Project>{919ddb7a-9c0d-4ebd-b181-a42383b7283e}</Project>
       <Name>ViewT.Crediario.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RepositoryFake\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
