@@ -5,11 +5,11 @@ namespace ViewT.Crediario.Domain.Tests.Unit.Main.Commands.Builders
 {
     public class UserRegisterCommandBuilder
     {
-        private string _name = string.Empty;
-        private string _email = String.Empty;
-        private string _password = string.Empty;
-        private string _phoneNumber = string.Empty;
-        private string _documentNumber = string.Empty;
+        private string _name = null;
+        private string _email = null;
+        private string _password = null;
+        private string _phoneNumber = null;
+        private string _documentNumber = null;
 
         public UserRegisterCommand Build()
         {

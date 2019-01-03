@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using ViewT.Crediario.Domain.Core.CommandHandler;
 using ViewT.Crediario.Domain.Core.Commands;
 using ViewT.Crediario.Domain.Core.DomainNotification.Events;
@@ -7,7 +6,6 @@ using ViewT.Crediario.Domain.Core.Interfaces;
 using ViewT.Crediario.Domain.Main.Commands.Inputs;
 using ViewT.Crediario.Domain.Main.Commands.Results;
 using ViewT.Crediario.Domain.Main.Entities;
-using ViewT.Crediario.Domain.Main.Enums;
 using ViewT.Crediario.Domain.Main.Events;
 using ViewT.Crediario.Domain.Main.Interfaces;
 
@@ -20,22 +18,16 @@ namespace ViewT.Crediario.Domain.Main.Commands.Handlers
         ICommandHandler<UserChangePasswordCommand>
     {
         private readonly IPersonRepository _personRepository;
-        private readonly IDeviceRepository _deviceRepository;
-        private readonly ITokenRepository _tokenRepository;
         private readonly IPasswordService _passwordService;
         private readonly IValidationService _validationService;
 
         public UserCommandHandler(
             IPersonRepository personRepository,
-            IDeviceRepository deviceRepository,
-            ITokenRepository tokenRepository,
             IPasswordService passwordService,
             IValidationService validationService,
             IUnitOfWork uow, IDomainNotificationHandler<DomainNotification> notifications) : base(uow, notifications)
         {
             _personRepository = personRepository;
-            _deviceRepository = deviceRepository;
-            _tokenRepository = tokenRepository;
             _passwordService = passwordService;
             _validationService = validationService;
         }

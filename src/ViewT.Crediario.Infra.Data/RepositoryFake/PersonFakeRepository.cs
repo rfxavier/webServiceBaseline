@@ -5,7 +5,7 @@ using ViewT.Crediario.Domain.Tests.Unit.Main.Entities.Builders;
 
 namespace ViewT.Crediario.Infra.Data.RepositoryFake
 {
-    public class UserFakeRepository : IPersonRepository
+    public class PersonFakeRepository : IPersonRepository
     {
         public Person Add(Person person)
         {
@@ -15,11 +15,15 @@ namespace ViewT.Crediario.Infra.Data.RepositoryFake
 
         public Person GetByEmail(string email)
         {
-            var user = new PersonBuilder().WithSerialKey("").WithPersonId(Guid.NewGuid());
+            Person user = null;
+            if (email == "user@domain.com")
+            {
+                user = new PersonBuilder().WithSerialKey("").WithPersonId(Guid.NewGuid());
+            }
             return user;
         }
 
-        public Person GetByUserNameAndPassword(string userName, string userPassword)
+        public Person GetByEmailAndPassword(string userName, string userPassword)
         {
             Person user = null;
             switch (userName) {
@@ -30,8 +34,7 @@ namespace ViewT.Crediario.Infra.Data.RepositoryFake
                         .WithName("Administrador")
                         .WithSerialKey("")
                         .WithPhoneNumber("1933221100")
-                        .WithDocumentNumber("443333337")
-                        .WithAdmin(true);
+                        .WithDocumentNumber("443333337");
                     break;
                 case "visitor@viewt.com.br":
                     user = new PersonBuilder()
@@ -40,8 +43,7 @@ namespace ViewT.Crediario.Infra.Data.RepositoryFake
                         .WithName("Visitante")
                         .WithSerialKey("")
                         .WithPhoneNumber("1933221100")
-                        .WithDocumentNumber("443333337")
-                        .WithVisitor(true);
+                        .WithDocumentNumber("443333337");
                     break;
                 case "resident@viewt.com.br":
                     user = new PersonBuilder()
@@ -50,8 +52,7 @@ namespace ViewT.Crediario.Infra.Data.RepositoryFake
                         .WithName("Morador")
                         .WithSerialKey("")
                         .WithPhoneNumber("1933221100")
-                        .WithDocumentNumber("443333337")
-                        .WithResident(true);
+                        .WithDocumentNumber("443333337");
                     break;
                 case "adminresident@viewt.com.br":
                     user = new PersonBuilder()
@@ -60,9 +61,7 @@ namespace ViewT.Crediario.Infra.Data.RepositoryFake
                         .WithName("Administrador e Morador")
                         .WithSerialKey("")
                         .WithPhoneNumber("1933221100")
-                        .WithDocumentNumber("443333337")
-                        .WithAdmin(true)
-                        .WithResident(true);
+                        .WithDocumentNumber("443333337");
                     break;
                 default:
                     user = new PersonBuilder()
@@ -71,8 +70,7 @@ namespace ViewT.Crediario.Infra.Data.RepositoryFake
                         .WithName("Visitante")
                         .WithSerialKey("")
                         .WithPhoneNumber("1933221100")
-                        .WithDocumentNumber("443333337")
-                        .WithVisitor(true);
+                        .WithDocumentNumber("443333337");
                     break;
             }
 
@@ -86,8 +84,19 @@ namespace ViewT.Crediario.Infra.Data.RepositoryFake
 
         public Person GetBySerialKey(string serialKey)
         {
-            var user = new PersonBuilder().WithPersonId(new Guid("cf0c2a93-e3c6-4e53-b243-960213d745a6"));
-            return user;
+            Person person = new PersonBuilder()
+                .WithPersonId(new Guid("cf0c2a93-e3c6-4e53-b243-960213d745a6"))
+                .WithName("Jean Santana")
+                .WithEmail("jean.santana@viewt.com.br")
+                .WithPhoneNumber("19997727726")
+                .WithDocumentNumber("4041476");
+
+            return person;
+        }
+
+        public Person GetById(Guid personId)
+        {
+            return new PersonBuilder();
         }
     }
 }
