@@ -8,8 +8,10 @@ using ViewT.Crediario.Domain.Main.Commands.Handlers;
 using ViewT.Crediario.Domain.Main.Commands.Inputs;
 using ViewT.Crediario.Domain.Main.Events;
 using ViewT.Crediario.Domain.Main.Interfaces;
+using ViewT.Crediario.Domain.Main.Services;
 using ViewT.Crediario.Infra.Data.Context;
-//using ViewT.Crediario.Infra.Data.RepositoryFake;
+using ViewT.Crediario.Infra.Data.RepositoryFake;
+using ViewT.Crediario.Infra.Data.Service;
 using ViewT.Crediario.Infra.Data.UoW;
 
 namespace ViewT.Crediario.Infra.CrossCutting.IoC
@@ -18,10 +20,6 @@ namespace ViewT.Crediario.Infra.CrossCutting.IoC
     {
         public static void RegisterServices(Container container)
         {
-            // Lifestyle.Transient => Uma instancia para cada solicitacao;
-            // Lifestyle.Singleton => Uma instancia unica para a classe
-            // Lifestyle.Scoped => Uma instancia unica para o request
-
             // App
             container.Register<IDomainNotificationHandler<DomainNotification>, DomainNotificationHandler>(Lifestyle.Scoped);
             container.Register<IHandler<DomainNotification>, DomainNotificationHandler>(Lifestyle.Scoped);
@@ -40,11 +38,20 @@ namespace ViewT.Crediario.Infra.CrossCutting.IoC
             // Infra Dados
             container.Register<CrediarioContext>(Lifestyle.Scoped);
 
-            //container.Register<IVersionRepository, VersionFakeRepository>(Lifestyle.Scoped);
-            //container.Register<IPersonRepository, UserFakeRepository>(Lifestyle.Scoped);
-            //container.Register<IDeviceRepository, DeviceFakeRepository>(Lifestyle.Scoped);
-            //container.Register<ITokenRepository, TokenFakeRepository>(Lifestyle.Scoped);
-            //container.Register<IEmailNotificationRepository, EmailNotificationFakeRepository>(Lifestyle.Scoped);
+            #region .: RealRepositories :.
+            #endregion
+
+            #region .: FakeRepositories :.
+            container.Register<IVersionRepository, VersionFakeRepository>(Lifestyle.Scoped);
+            container.Register<IPersonRepository, PersonFakeRepository>(Lifestyle.Scoped);
+            container.Register<IEmailNotificationRepository, EmailNotificationFakeRepository>(Lifestyle.Scoped);
+            #endregion
+
+            container.Register<IValidationService, ValidationService>(Lifestyle.Scoped);
+            container.Register<IEmailService, EmailService>(Lifestyle.Scoped);
+            container.Register<IPasswordService, PasswordService>(Lifestyle.Scoped);
+            container.Register<IPushService, PushService>(Lifestyle.Scoped);
+
         }
     }
 }

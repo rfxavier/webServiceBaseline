@@ -69,6 +69,7 @@
     <Compile Include="Main\Interfaces\IEmailService.cs" />
     <Compile Include="Main\Interfaces\IPasswordServices.cs" />
     <Compile Include="Main\Interfaces\IPersonRepository.cs" />
+    <Compile Include="Main\Interfaces\IPushService.cs" />
     <Compile Include="Main\Interfaces\ITokenRepository.cs" />
     <Compile Include="Main\Interfaces\IValidationService.cs" />
     <Compile Include="Main\Interfaces\IVersionRepository.cs" />

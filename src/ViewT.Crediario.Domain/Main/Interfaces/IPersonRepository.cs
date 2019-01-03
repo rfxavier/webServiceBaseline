@@ -1,4 +1,5 @@
-﻿using ViewT.Crediario.Domain.Main.Entities;
+﻿using System;
+using ViewT.Crediario.Domain.Main.Entities;
 
 namespace ViewT.Crediario.Domain.Main.Interfaces
 {
@@ -6,9 +7,9 @@ namespace ViewT.Crediario.Domain.Main.Interfaces
     {
         Person Add(Person person);
         Person GetByEmail(string email);
-        Person GetByUserNameAndPassword(string userName, string userPassword);
+        Person GetByEmailAndPassword(string email, string userPassword);
         Person Update(Person person);
         Person GetBySerialKey(string serialKey);
-        Person GetByEmailAndPassword(string email, string userPassword);
+        Person GetById(Guid personId);
     }
 }
