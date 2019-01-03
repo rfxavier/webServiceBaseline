@@ -118,117 +118,288 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="UserAuthenticateUserIsInactive" xml:space="preserve">
-    <value>Usuário está desabilitado</value>
+    <value>[E0012] Usuário está desabilitado</value>
   </data>
   <data name="UserAuthenticateLoginFailed" xml:space="preserve">
-    <value>Usuário ou senha não conferem. Login falhou.</value>
+    <value>[E0014] Usuário ou senha não conferem. Login falhou.</value>
   </data>
   <data name="UserAuthenticatePasswordRequired" xml:space="preserve">
-    <value>Senha não informada</value>
+    <value>[E0013] Senha não informada</value>
   </data>
   <data name="UserAuthenticateUserRequired" xml:space="preserve">
-    <value>Usuário não informado</value>
+    <value>[E0011] Usuário não informado</value>
   </data>
   <data name="CondoAddNewCondoNameMoreThan6" xml:space="preserve">
-    <value>Nome do condomínio tem menos de 6 caracteres</value>
+    <value>[E0020] Nome do condomínio tem menos de 6 caracteres</value>
   </data>
   <data name="CondoAddNewCondoNameRequired" xml:space="preserve">
-    <value>Nome do condomínio não informado</value>
+    <value>[E0021] Nome do condomínio não informado</value>
   </data>
   <data name="InvalidCommandRequested" xml:space="preserve">
-    <value>Requisição inválida</value>
+    <value>[E0031] Requisição inválida</value>
   </data>
   <data name="UserRegisterEmailAlreadyTaken" xml:space="preserve">
-    <value>Email já cadastrado</value>
+    <value>[E0005] Email já cadastrado</value>
   </data>
   <data name="EmailProper" xml:space="preserve">
-    <value>Email não é válido</value>
+    <value>[E0028] Email não é válido</value>
   </data>
   <data name="EmailRequired" xml:space="preserve">
-    <value>Email não informado</value>
+    <value>[E0029] Email não informado</value>
   </data>
   <data name="UserRegisterPasswordProper" xml:space="preserve">
-    <value>Senha não é válida</value>
+    <value>[E0003] Senha não é válida</value>
   </data>
   <data name="UserRegisterPasswordRequired" xml:space="preserve">
-    <value>Senha não informada</value>
+    <value>[E0004] Senha não informada</value>
   </data>
   <data name="SerialKeyRequired" xml:space="preserve">
-    <value>SerialKey não informado</value>
+    <value>[E0001] SerialKey não informado</value>
   </data>
   <data name="UserChangePasswordDeviceDoesNotBelongToUser" xml:space="preserve">
-    <value>Device não está vinculado a usuário</value>
+    <value>[E0009] Device não está vinculado a usuário</value>
   </data>
   <data name="UserChangePasswordDeviceNotFound" xml:space="preserve">
-    <value>Device não encontrado</value>
+    <value>[E0010] Device não encontrado</value>
   </data>
   <data name="UserChangePasswordIdentificationRequired" xml:space="preserve">
-    <value>Identification não informado</value>
+    <value>[E0008] Identification não informado</value>
   </data>
   <data name="UserForgotPasswordEmailProper" xml:space="preserve">
-    <value>Email não é válido</value>
+    <value>[E0007] Email não é válido</value>
   </data>
   <data name="UserForgotPasswordEmailRequired" xml:space="preserve">
-    <value>Email não informado</value>
+    <value>[E0006] Email não informado</value>
   </data>
   <data name="UserNotFound" xml:space="preserve">
-    <value>Usuário não encontrado</value>
+    <value>[E0002] Usuário não encontrado</value>
   </data>
   <data name="PersonUpdateProfileNameRequired" xml:space="preserve">
-    <value>Nome não informado</value>
+    <value>[E0036] Nome não informado</value>
   </data>
   <data name="PersonVehicleLicensePlateRequired" xml:space="preserve">
-    <value>Placa do veículo não informada</value>
+    <value>[E0039] Placa do veículo não informada</value>
   </data>
   <data name="PersonVehicleModelRequired" xml:space="preserve">
-    <value>Modelo do veículo não informado</value>
+    <value>[E0040] Modelo do veículo não informado</value>
   </data>
   <data name="PersonUpdateProfileDocumentNumberRequired" xml:space="preserve">
-    <value>Documento não informado</value>
+    <value>[E0035] Documento não informado</value>
   </data>
   <data name="PersonUpdateProfilePhoneNumberRequired" xml:space="preserve">
-    <value>Telefone não informado</value>
+    <value>[E0037] Telefone não informado</value>
   </data>
   <data name="PersonVehicleIdRequired" xml:space="preserve">
-    <value>Id do veículo não informado</value>
+    <value>[E0038] Id do veículo não informado</value>
   </data>
   <data name="UserVehicleNotFound" xml:space="preserve">
-    <value>Veículo não encontrado</value>
+    <value>[E0041] Veículo não encontrado</value>
   </data>
   <data name="AppImageNotFound" xml:space="preserve">
-    <value>Imagem não encontrada</value>
+    <value>[E0019] Imagem não encontrada</value>
   </data>
   <data name="ImageNotFound" xml:space="preserve">
-    <value>Imagem não encontrada</value>
+    <value>[E0030] Imagem não encontrada</value>
   </data>
   <data name="AppImageIdRequired" xml:space="preserve">
-    <value>AppImageId não informado</value>
+    <value>[E0018] AppImageId não informado</value>
   </data>
   <data name="AppImageIdInvalid" xml:space="preserve">
-    <value>AppImageId inválido</value>
+    <value>[E0017] AppImageId inválido</value>
   </data>
   <data name="UserAppImageBase64StringImageRequired" xml:space="preserve">
-    <value>Imagem não informada</value>
+    <value>[E0016] Imagem não informada</value>
   </data>
   <data name="UserAppImageNotFound" xml:space="preserve">
-    <value>Imagem não encontrada</value>
+    <value>[E0015] Imagem não encontrada</value>
   </data>
   <data name="CondoGenerateCodePersonHasNoLinkedCondo" xml:space="preserve">
-    <value>Pessoa não possui condomínio vinculado</value>
+    <value>[E0022] Pessoa não possui condomínio vinculado</value>
   </data>
   <data name="CondoGenerateCodePersonIsNotAdmin" xml:space="preserve">
-    <value>Pessoa não possui status de Administrador</value>
+    <value>[E0023] Pessoa não possui status de Administrador</value>
   </data>
   <data name="PersonLinkCondoCodePersonHasAlreadyLinkedCondo" xml:space="preserve">
-    <value>Pessoa já possui condomínio vinculado</value>
+    <value>[E0034] Pessoa já possui condomínio vinculado</value>
   </data>
-  <data name="PersonLinkCondoCodeCondoCodeRequired" xml:space="preserve">
-    <value>Código de vinculação não informado</value>
+  <data name="PersonLinkCondoCodeCondoCodeValueRequired" xml:space="preserve">
+    <value>[E0033] Código de vinculação não informado</value>
   </data>
   <data name="PersonLinkCondoCodeCondoCodeNotFound" xml:space="preserve">
-    <value>Código de vinculação não encontrado</value>
+    <value>[E0032] Código de vinculação não encontrado</value>
+  </data>
+  <data name="CondoNotFound" xml:space="preserve">
+    <value>[E0026] Condomínio não encontrado</value>
+  </data>
+  <data name="CondoPersonNotFound" xml:space="preserve">
+    <value>[E0027] Pessoa não é moradora do condomínio</value>
+  </data>
+  <data name="CondoIdInvalid" xml:space="preserve">
+    <value>[E0024] CondoId inválido</value>
+  </data>
+  <data name="CondoIdRequired" xml:space="preserve">
+    <value>[E0025] CondoId não informado</value>
+  </data>
+  <data name="PersonUpdateProfileAppImagesIdsInvalid" xml:space="preserve">
+    <value>[E0042] AppImageIds inválidos</value>
+  </data>
+  <data name="PersonUpdateProfileVehiclesIdsInvalid" xml:space="preserve">
+    <value>[E0043] PersonVehicleIds inválidos</value>
+  </data>
+  <data name="PersonLinkResidentCodeVisitorHasAlreadyLinkedResident" xml:space="preserve">
+    <value>[E0044] Visitante já possui este morador vinculado</value>
+  </data>
+  <data name="PersonLinkResidentCodeResidentCodeRequired" xml:space="preserve">
+    <value>[E0045] Código de morador não informado</value>
+  </data>
+  <data name="PersonLinkResidentCodeResidentCodeNotFound" xml:space="preserve">
+    <value>[E0046] Código de morador não encontrado</value>
+  </data>
+  <data name="PersonVisitorRelationTypeInvalid" xml:space="preserve">
+    <value>[E0047] Tipo de relação da pessoa inválido</value>
+  </data>
+  <data name="PersonVisitorIdInvalid" xml:space="preserve">
+    <value>[E0048] PersonVisitorId inválido</value>
+  </data>
+  <data name="PersonVisitorIdRequired" xml:space="preserve">
+    <value>[E0049] PersonVisitorId não informado</value>
+  </data>
+  <data name="PersonVisitorServiceFoundPersonVisitorAccesses" xml:space="preserve">
+    <value>[E0050] Existem acessos vinculados a visita, não é possível excluir</value>
+  </data>
+  <data name="PersonVisitorNotFound" xml:space="preserve">
+    <value>[E0051] Visitante não encontrado</value>
+  </data>
+  <data name="PersonVisitorStatusInvalid" xml:space="preserve">
+    <value>[E0052] Status de visitante inválido</value>
+  </data>
+  <data name="GrantAccessInvalidDateProfile" xml:space="preserve">
+    <value>[E0053] Composição do período de datas ou repetições está inválida</value>
+  </data>
+  <data name="StartDateInvalid" xml:space="preserve">
+    <value>[E0054] Data inicial inválida</value>
+  </data>
+  <data name="EndDateInvalid" xml:space="preserve">
+    <value>[E0055] Data final inválida</value>
+  </data>
+  <data name="DateUntilInvalid" xml:space="preserve">
+    <value>[E0056] Data até inválida</value>
+  </data>
+  <data name="ServiceProviderIdInvalid" xml:space="preserve">
+    <value>[E0058] ServiceProviderId inválido</value>
+  </data>
+  <data name="ServiceProviderIdRequired" xml:space="preserve">
+    <value>[E0057] ServiceProviderId não informado</value>
+  </data>
+  <data name="ServiceProviderNotFound" xml:space="preserve">
+    <value>[E0059] Prestador de serviço não encontrado</value>
+  </data>
+  <data name="ServiceProviderServiceFoundServiceProviderAccesses" xml:space="preserve">
+    <value>[E0060] Existem acessos vinculados a prestador de serviço, não é possível excluir</value>
+  </data>
+  <data name="ServiceProviderTypeIdInvalid" xml:space="preserve">
+    <value>[E0062] ServiceProviderTypeId inválido</value>
+  </data>
+  <data name="ServiceProviderTypeIdRequired" xml:space="preserve">
+    <value>[E0061] ServiceProviderTypeId não informado</value>
+  </data>
+  <data name="ServiceProviderTypeNotFound" xml:space="preserve">
+    <value>[E0063] Tipo de prestador de serviço não encontrado</value>
+  </data>
+  <data name="DeliveryTypeIdInvalid" xml:space="preserve">
+    <value>[E0065] DeliveryTypeId inválido</value>
+  </data>
+  <data name="DeliveryTypeIdRequired" xml:space="preserve">
+    <value>[E0064] DeliveryTypeId não informado</value>
+  </data>
+  <data name="DeliveryTypeNotFound" xml:space="preserve">
+    <value>[E0066] Tipo de delivery não encontrado</value>
+  </data>
+  <data name="DeliveryNotFound" xml:space="preserve">
+    <value>[E0067] Delivery não encontrada</value>
+  </data>
+  <data name="DeliveryIdInvalid" xml:space="preserve">
+    <value>[E0069] DeliveryId inválido</value>
+  </data>
+  <data name="DeliveryIdRequired" xml:space="preserve">
+    <value>[E0068] DeliveryId não informado</value>
+  </data>
+  <data name="DeliveryServiceFoundDeliveryAccesses" xml:space="preserve">
+    <value>[E0070] Existem acessos vinculados a delivery, não é possível excluir</value>
+  </data>
+  <data name="PersonVisitorIdsRequired" xml:space="preserve">
+    <value>[E0071] Lista de PersonVisitorId não informada</value>
+  </data>
+  <data name="PersonVisitorIdsInvalid" xml:space="preserve">
+    <value>[E0071] Lista de PersonVisitorId inválida</value>
+  </data>
+  <data name="ServiceProviderIdsInvalid" xml:space="preserve">
+    <value>[E0072] Lista de ServiceProviderId inválida</value>
+  </data>
+  <data name="ServiceProviderIdsRequired" xml:space="preserve">
+    <value>[E0073] Lista de ServiceProviderId não informada</value>
+  </data>
+  <data name="UserAuthenticateDeviceOsInvalid" xml:space="preserve">
+    <value>[E0074] DeviceOs inválido</value>
+  </data>
+  <data name="DeliveryIdsInvalid" xml:space="preserve">
+    <value>[E0076] Lista de DeliveryId inválida</value>
+  </data>
+  <data name="DeliveryIdsRequired" xml:space="preserve">
+    <value>[E0075] Lista de DeliveryId não informada</value>
+  </data>
+  <data name="PersonVisitorIsSameAsResident" xml:space="preserve">
+    <value>[E0077] Visitante e morador não podem ser a mesma pessoa</value>
+  </data>
+  <data name="DueDateInvalid" xml:space="preserve">
+    <value>[E0078] Data de expiração inválida</value>
+  </data>
+  <data name="SurveyChoicesInvalid" xml:space="preserve">
+    <value>[E0083] Opções de resposta da enquete inválidas</value>
+  </data>
+  <data name="SurveyChoicesRequired" xml:space="preserve">
+    <value>[E0082] Opções de resposta da enquete não informadas</value>
+  </data>
+  <data name="AdminCreateSurveyDescriptionRequired" xml:space="preserve">
+    <value>[E0080] Descrição da enquete não informada</value>
+  </data>
+  <data name="AdminCreateSurveyQuestionRequired" xml:space="preserve">
+    <value>[E0081] Pergunta da enquete não informada</value>
+  </data>
+  <data name="AdminCreateSurveyTitleRequired" xml:space="preserve">
+    <value>[E0079] Título da enquete não informado</value>
+  </data>
+  <data name="SurveyIdInvalid" xml:space="preserve">
+    <value>[E0085] SurveyId inválido</value>
+  </data>
+  <data name="SurveyIdRequired" xml:space="preserve">
+    <value>[E0084] SurveyId não informado</value>
+  </data>
+  <data name="SurveyNotFound" xml:space="preserve">
+    <value>[E0086] Enquete não encontrada</value>
+  </data>
+  <data name="CondosRequired" xml:space="preserve">
+    <value>[E0087] Lista de Condos não informada</value>
+  </data>
+  <data name="CondosInvalid" xml:space="preserve">
+    <value>[E0088] Lista de Condos inválida</value>
+  </data>
+  <data name="PersonSendNotificationCommentRequired" xml:space="preserve">
+    <value>[E0090] Comentário da notificação não informado</value>
+  </data>
+  <data name="PersonSendNotificationSubjectRequired" xml:space="preserve">
+    <value>[E0089] Assunto da notificação não informado</value>
+  </data>
+  <data name="CondoPersonIdsInvalid" xml:space="preserve">
+    <value>[E0092] Lista de CondoPersonId inválida</value>
+  </data>
+  <data name="CondoPersonIdsRequired" xml:space="preserve">
+    <value>[E0091] Lista de CondoPersonId não informada</value>
   </data>
   <data name="PushTokenRequired" xml:space="preserve">
-    <value>O push token é obrigatório</value>
+    <value>[E0093] PushToken não informado</value>
+  </data>
+  <data name="NameRequired" xml:space="preserve">
+    <value>[E0094] Nome não informado</value>
   </data>
 </root>

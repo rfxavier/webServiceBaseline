@@ -22,7 +22,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Messages {
+    public class Messages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ViewT.Crediario.Domain.Main.Resources.Messages", typeof(Messages).Assembly);
@@ -51,7 +51,7 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,342 +61,855 @@ namespace ViewT.Crediario.Domain.Main.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppImageId inválido.
+        ///   Looks up a localized string similar to [E0080] Descrição da enquete não informada.
         /// </summary>
-        internal static string AppImageIdInvalid {
+        public static string AdminCreateSurveyDescriptionRequired {
+            get {
+                return ResourceManager.GetString("AdminCreateSurveyDescriptionRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0081] Pergunta da enquete não informada.
+        /// </summary>
+        public static string AdminCreateSurveyQuestionRequired {
+            get {
+                return ResourceManager.GetString("AdminCreateSurveyQuestionRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0079] Título da enquete não informado.
+        /// </summary>
+        public static string AdminCreateSurveyTitleRequired {
+            get {
+                return ResourceManager.GetString("AdminCreateSurveyTitleRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0017] AppImageId inválido.
+        /// </summary>
+        public static string AppImageIdInvalid {
             get {
                 return ResourceManager.GetString("AppImageIdInvalid", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppImageId não informado.
+        ///   Looks up a localized string similar to [E0018] AppImageId não informado.
         /// </summary>
-        internal static string AppImageIdRequired {
+        public static string AppImageIdRequired {
             get {
                 return ResourceManager.GetString("AppImageIdRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Imagem não encontrada.
+        ///   Looks up a localized string similar to [E0019] Imagem não encontrada.
         /// </summary>
-        internal static string AppImageNotFound {
+        public static string AppImageNotFound {
             get {
                 return ResourceManager.GetString("AppImageNotFound", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nome do condomínio tem menos de 6 caracteres.
+        ///   Looks up a localized string similar to [E0020] Nome do condomínio tem menos de 6 caracteres.
         /// </summary>
-        internal static string CondoAddNewCondoNameMoreThan6 {
+        public static string CondoAddNewCondoNameMoreThan6 {
             get {
                 return ResourceManager.GetString("CondoAddNewCondoNameMoreThan6", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nome do condomínio não informado.
+        ///   Looks up a localized string similar to [E0021] Nome do condomínio não informado.
         /// </summary>
-        internal static string CondoAddNewCondoNameRequired {
+        public static string CondoAddNewCondoNameRequired {
             get {
                 return ResourceManager.GetString("CondoAddNewCondoNameRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pessoa não possui condomínio vinculado.
+        ///   Looks up a localized string similar to [E0022] Pessoa não possui condomínio vinculado.
         /// </summary>
-        internal static string CondoGenerateCodePersonHasNoLinkedCondo {
+        public static string CondoGenerateCodePersonHasNoLinkedCondo {
             get {
                 return ResourceManager.GetString("CondoGenerateCodePersonHasNoLinkedCondo", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pessoa não possui status de Administrador.
+        ///   Looks up a localized string similar to [E0023] Pessoa não possui status de Administrador.
         /// </summary>
-        internal static string CondoGenerateCodePersonIsNotAdmin {
+        public static string CondoGenerateCodePersonIsNotAdmin {
             get {
                 return ResourceManager.GetString("CondoGenerateCodePersonIsNotAdmin", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email não é válido.
+        ///   Looks up a localized string similar to [E0024] CondoId inválido.
         /// </summary>
-        internal static string EmailProper {
+        public static string CondoIdInvalid {
+            get {
+                return ResourceManager.GetString("CondoIdInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0025] CondoId não informado.
+        /// </summary>
+        public static string CondoIdRequired {
+            get {
+                return ResourceManager.GetString("CondoIdRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0026] Condomínio não encontrado.
+        /// </summary>
+        public static string CondoNotFound {
+            get {
+                return ResourceManager.GetString("CondoNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0092] Lista de CondoPersonId inválida.
+        /// </summary>
+        public static string CondoPersonIdsInvalid {
+            get {
+                return ResourceManager.GetString("CondoPersonIdsInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0091] Lista de CondoPersonId não informada.
+        /// </summary>
+        public static string CondoPersonIdsRequired {
+            get {
+                return ResourceManager.GetString("CondoPersonIdsRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0027] Pessoa não é moradora do condomínio.
+        /// </summary>
+        public static string CondoPersonNotFound {
+            get {
+                return ResourceManager.GetString("CondoPersonNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0088] Lista de Condos inválida.
+        /// </summary>
+        public static string CondosInvalid {
+            get {
+                return ResourceManager.GetString("CondosInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0087] Lista de Condos não informada.
+        /// </summary>
+        public static string CondosRequired {
+            get {
+                return ResourceManager.GetString("CondosRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0056] Data até inválida.
+        /// </summary>
+        public static string DateUntilInvalid {
+            get {
+                return ResourceManager.GetString("DateUntilInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0069] DeliveryId inválido.
+        /// </summary>
+        public static string DeliveryIdInvalid {
+            get {
+                return ResourceManager.GetString("DeliveryIdInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0068] DeliveryId não informado.
+        /// </summary>
+        public static string DeliveryIdRequired {
+            get {
+                return ResourceManager.GetString("DeliveryIdRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0076] Lista de DeliveryId inválida.
+        /// </summary>
+        public static string DeliveryIdsInvalid {
+            get {
+                return ResourceManager.GetString("DeliveryIdsInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0075] Lista de DeliveryId não informada.
+        /// </summary>
+        public static string DeliveryIdsRequired {
+            get {
+                return ResourceManager.GetString("DeliveryIdsRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0067] Delivery não encontrada.
+        /// </summary>
+        public static string DeliveryNotFound {
+            get {
+                return ResourceManager.GetString("DeliveryNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0070] Existem acessos vinculados a delivery, não é possível excluir.
+        /// </summary>
+        public static string DeliveryServiceFoundDeliveryAccesses {
+            get {
+                return ResourceManager.GetString("DeliveryServiceFoundDeliveryAccesses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0065] DeliveryTypeId inválido.
+        /// </summary>
+        public static string DeliveryTypeIdInvalid {
+            get {
+                return ResourceManager.GetString("DeliveryTypeIdInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0064] DeliveryTypeId não informado.
+        /// </summary>
+        public static string DeliveryTypeIdRequired {
+            get {
+                return ResourceManager.GetString("DeliveryTypeIdRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0066] Tipo de delivery não encontrado.
+        /// </summary>
+        public static string DeliveryTypeNotFound {
+            get {
+                return ResourceManager.GetString("DeliveryTypeNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0078] Data de expiração inválida.
+        /// </summary>
+        public static string DueDateInvalid {
+            get {
+                return ResourceManager.GetString("DueDateInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0028] Email não é válido.
+        /// </summary>
+        public static string EmailProper {
             get {
                 return ResourceManager.GetString("EmailProper", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email não informado.
+        ///   Looks up a localized string similar to [E0029] Email não informado.
         /// </summary>
-        internal static string EmailRequired {
+        public static string EmailRequired {
             get {
                 return ResourceManager.GetString("EmailRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Imagem não encontrada.
+        ///   Looks up a localized string similar to [E0055] Data final inválida.
         /// </summary>
-        internal static string ImageNotFound {
+        public static string EndDateInvalid {
+            get {
+                return ResourceManager.GetString("EndDateInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0053] Composição do período de datas ou repetições está inválida.
+        /// </summary>
+        public static string GrantAccessInvalidDateProfile {
+            get {
+                return ResourceManager.GetString("GrantAccessInvalidDateProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0030] Imagem não encontrada.
+        /// </summary>
+        public static string ImageNotFound {
             get {
                 return ResourceManager.GetString("ImageNotFound", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Requisição inválida.
+        ///   Looks up a localized string similar to [E0031] Requisição inválida.
         /// </summary>
-        internal static string InvalidCommandRequested {
+        public static string InvalidCommandRequested {
             get {
                 return ResourceManager.GetString("InvalidCommandRequested", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Código de vinculação não encontrado.
+        ///   Looks up a localized string similar to [E0094] Nome não informado.
         /// </summary>
-        internal static string PersonLinkCondoCodeCondoCodeNotFound {
+        public static string NameRequired {
+            get {
+                return ResourceManager.GetString("NameRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0032] Código de vinculação não encontrado.
+        /// </summary>
+        public static string PersonLinkCondoCodeCondoCodeNotFound {
             get {
                 return ResourceManager.GetString("PersonLinkCondoCodeCondoCodeNotFound", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Código de vinculação não informado.
+        ///   Looks up a localized string similar to [E0033] Código de vinculação não informado.
         /// </summary>
-        internal static string PersonLinkCondoCodeCondoCodeRequired {
+        public static string PersonLinkCondoCodeCondoCodeValueRequired {
             get {
-                return ResourceManager.GetString("PersonLinkCondoCodeCondoCodeRequired", resourceCulture);
+                return ResourceManager.GetString("PersonLinkCondoCodeCondoCodeValueRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pessoa já possui condomínio vinculado.
+        ///   Looks up a localized string similar to [E0034] Pessoa já possui condomínio vinculado.
         /// </summary>
-        internal static string PersonLinkCondoCodePersonHasAlreadyLinkedCondo {
+        public static string PersonLinkCondoCodePersonHasAlreadyLinkedCondo {
             get {
                 return ResourceManager.GetString("PersonLinkCondoCodePersonHasAlreadyLinkedCondo", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Documento não informado.
+        ///   Looks up a localized string similar to [E0046] Código de morador não encontrado.
         /// </summary>
-        internal static string PersonUpdateProfileDocumentNumberRequired {
+        public static string PersonLinkResidentCodeResidentCodeNotFound {
+            get {
+                return ResourceManager.GetString("PersonLinkResidentCodeResidentCodeNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0045] Código de morador não informado.
+        /// </summary>
+        public static string PersonLinkResidentCodeResidentCodeRequired {
+            get {
+                return ResourceManager.GetString("PersonLinkResidentCodeResidentCodeRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0044] Visitante já possui este morador vinculado.
+        /// </summary>
+        public static string PersonLinkResidentCodeVisitorHasAlreadyLinkedResident {
+            get {
+                return ResourceManager.GetString("PersonLinkResidentCodeVisitorHasAlreadyLinkedResident", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0090] Comentário da notificação não informado.
+        /// </summary>
+        public static string PersonSendNotificationCommentRequired {
+            get {
+                return ResourceManager.GetString("PersonSendNotificationCommentRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0089] Assunto da notificação não informado.
+        /// </summary>
+        public static string PersonSendNotificationSubjectRequired {
+            get {
+                return ResourceManager.GetString("PersonSendNotificationSubjectRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0042] AppImageIds inválidos.
+        /// </summary>
+        public static string PersonUpdateProfileAppImagesIdsInvalid {
+            get {
+                return ResourceManager.GetString("PersonUpdateProfileAppImagesIdsInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0035] Documento não informado.
+        /// </summary>
+        public static string PersonUpdateProfileDocumentNumberRequired {
             get {
                 return ResourceManager.GetString("PersonUpdateProfileDocumentNumberRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nome não informado.
+        ///   Looks up a localized string similar to [E0036] Nome não informado.
         /// </summary>
-        internal static string PersonUpdateProfileNameRequired {
+        public static string PersonUpdateProfileNameRequired {
             get {
                 return ResourceManager.GetString("PersonUpdateProfileNameRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Telefone não informado.
+        ///   Looks up a localized string similar to [E0037] Telefone não informado.
         /// </summary>
-        internal static string PersonUpdateProfilePhoneNumberRequired {
+        public static string PersonUpdateProfilePhoneNumberRequired {
             get {
                 return ResourceManager.GetString("PersonUpdateProfilePhoneNumberRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Id do veículo não informado.
+        ///   Looks up a localized string similar to [E0043] PersonVehicleIds inválidos.
         /// </summary>
-        internal static string PersonVehicleIdRequired {
+        public static string PersonUpdateProfileVehiclesIdsInvalid {
+            get {
+                return ResourceManager.GetString("PersonUpdateProfileVehiclesIdsInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0038] Id do veículo não informado.
+        /// </summary>
+        public static string PersonVehicleIdRequired {
             get {
                 return ResourceManager.GetString("PersonVehicleIdRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Placa do veículo não informada.
+        ///   Looks up a localized string similar to [E0039] Placa do veículo não informada.
         /// </summary>
-        internal static string PersonVehicleLicensePlateRequired {
+        public static string PersonVehicleLicensePlateRequired {
             get {
                 return ResourceManager.GetString("PersonVehicleLicensePlateRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Modelo do veículo não informado.
+        ///   Looks up a localized string similar to [E0040] Modelo do veículo não informado.
         /// </summary>
-        internal static string PersonVehicleModelRequired {
+        public static string PersonVehicleModelRequired {
             get {
                 return ResourceManager.GetString("PersonVehicleModelRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to O push token é obrigatório.
+        ///   Looks up a localized string similar to [E0048] PersonVisitorId inválido.
         /// </summary>
-        internal static string PushTokenRequired {
+        public static string PersonVisitorIdInvalid {
+            get {
+                return ResourceManager.GetString("PersonVisitorIdInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0049] PersonVisitorId não informado.
+        /// </summary>
+        public static string PersonVisitorIdRequired {
+            get {
+                return ResourceManager.GetString("PersonVisitorIdRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0071] Lista de PersonVisitorId inválida.
+        /// </summary>
+        public static string PersonVisitorIdsInvalid {
+            get {
+                return ResourceManager.GetString("PersonVisitorIdsInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0071] Lista de PersonVisitorId não informada.
+        /// </summary>
+        public static string PersonVisitorIdsRequired {
+            get {
+                return ResourceManager.GetString("PersonVisitorIdsRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0077] Visitante e morador não podem ser a mesma pessoa.
+        /// </summary>
+        public static string PersonVisitorIsSameAsResident {
+            get {
+                return ResourceManager.GetString("PersonVisitorIsSameAsResident", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0051] Visitante não encontrado.
+        /// </summary>
+        public static string PersonVisitorNotFound {
+            get {
+                return ResourceManager.GetString("PersonVisitorNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0047] Tipo de relação da pessoa inválido.
+        /// </summary>
+        public static string PersonVisitorRelationTypeInvalid {
+            get {
+                return ResourceManager.GetString("PersonVisitorRelationTypeInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0050] Existem acessos vinculados a visita, não é possível excluir.
+        /// </summary>
+        public static string PersonVisitorServiceFoundPersonVisitorAccesses {
+            get {
+                return ResourceManager.GetString("PersonVisitorServiceFoundPersonVisitorAccesses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0052] Status de visitante inválido.
+        /// </summary>
+        public static string PersonVisitorStatusInvalid {
+            get {
+                return ResourceManager.GetString("PersonVisitorStatusInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0093] PushToken não informado.
+        /// </summary>
+        public static string PushTokenRequired {
             get {
                 return ResourceManager.GetString("PushTokenRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SerialKey não informado.
+        ///   Looks up a localized string similar to [E0001] SerialKey não informado.
         /// </summary>
-        internal static string SerialKeyRequired {
+        public static string SerialKeyRequired {
             get {
                 return ResourceManager.GetString("SerialKeyRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Imagem não informada.
+        ///   Looks up a localized string similar to [E0058] ServiceProviderId inválido.
         /// </summary>
-        internal static string UserAppImageBase64StringImageRequired {
+        public static string ServiceProviderIdInvalid {
+            get {
+                return ResourceManager.GetString("ServiceProviderIdInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0057] ServiceProviderId não informado.
+        /// </summary>
+        public static string ServiceProviderIdRequired {
+            get {
+                return ResourceManager.GetString("ServiceProviderIdRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0072] Lista de ServiceProviderId inválida.
+        /// </summary>
+        public static string ServiceProviderIdsInvalid {
+            get {
+                return ResourceManager.GetString("ServiceProviderIdsInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0073] Lista de ServiceProviderId não informada.
+        /// </summary>
+        public static string ServiceProviderIdsRequired {
+            get {
+                return ResourceManager.GetString("ServiceProviderIdsRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0059] Prestador de serviço não encontrado.
+        /// </summary>
+        public static string ServiceProviderNotFound {
+            get {
+                return ResourceManager.GetString("ServiceProviderNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0060] Existem acessos vinculados a prestador de serviço, não é possível excluir.
+        /// </summary>
+        public static string ServiceProviderServiceFoundServiceProviderAccesses {
+            get {
+                return ResourceManager.GetString("ServiceProviderServiceFoundServiceProviderAccesses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0062] ServiceProviderTypeId inválido.
+        /// </summary>
+        public static string ServiceProviderTypeIdInvalid {
+            get {
+                return ResourceManager.GetString("ServiceProviderTypeIdInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0061] ServiceProviderTypeId não informado.
+        /// </summary>
+        public static string ServiceProviderTypeIdRequired {
+            get {
+                return ResourceManager.GetString("ServiceProviderTypeIdRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0063] Tipo de prestador de serviço não encontrado.
+        /// </summary>
+        public static string ServiceProviderTypeNotFound {
+            get {
+                return ResourceManager.GetString("ServiceProviderTypeNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0054] Data inicial inválida.
+        /// </summary>
+        public static string StartDateInvalid {
+            get {
+                return ResourceManager.GetString("StartDateInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0083] Opções de resposta da enquete inválidas.
+        /// </summary>
+        public static string SurveyChoicesInvalid {
+            get {
+                return ResourceManager.GetString("SurveyChoicesInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0082] Opções de resposta da enquete não informadas.
+        /// </summary>
+        public static string SurveyChoicesRequired {
+            get {
+                return ResourceManager.GetString("SurveyChoicesRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0085] SurveyId inválido.
+        /// </summary>
+        public static string SurveyIdInvalid {
+            get {
+                return ResourceManager.GetString("SurveyIdInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0084] SurveyId não informado.
+        /// </summary>
+        public static string SurveyIdRequired {
+            get {
+                return ResourceManager.GetString("SurveyIdRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0086] Enquete não encontrada.
+        /// </summary>
+        public static string SurveyNotFound {
+            get {
+                return ResourceManager.GetString("SurveyNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0016] Imagem não informada.
+        /// </summary>
+        public static string UserAppImageBase64StringImageRequired {
             get {
                 return ResourceManager.GetString("UserAppImageBase64StringImageRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Imagem não encontrada.
+        ///   Looks up a localized string similar to [E0015] Imagem não encontrada.
         /// </summary>
-        internal static string UserAppImageNotFound {
+        public static string UserAppImageNotFound {
             get {
                 return ResourceManager.GetString("UserAppImageNotFound", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Usuário ou senha não conferem. Login falhou..
+        ///   Looks up a localized string similar to [E0074] DeviceOs inválido.
         /// </summary>
-        internal static string UserAuthenticateLoginFailed {
+        public static string UserAuthenticateDeviceOsInvalid {
+            get {
+                return ResourceManager.GetString("UserAuthenticateDeviceOsInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [E0014] Usuário ou senha não conferem. Login falhou..
+        /// </summary>
+        public static string UserAuthenticateLoginFailed {
             get {
                 return ResourceManager.GetString("UserAuthenticateLoginFailed", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Senha não informada.
+        ///   Looks up a localized string similar to [E0013] Senha não informada.
         /// </summary>
-        internal static string UserAuthenticatePasswordRequired {
+        public static string UserAuthenticatePasswordRequired {
             get {
                 return ResourceManager.GetString("UserAuthenticatePasswordRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Usuário está desabilitado.
+        ///   Looks up a localized string similar to [E0012] Usuário está desabilitado.
         /// </summary>
-        internal static string UserAuthenticateUserIsInactive {
+        public static string UserAuthenticateUserIsInactive {
             get {
                 return ResourceManager.GetString("UserAuthenticateUserIsInactive", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Usuário não informado.
+        ///   Looks up a localized string similar to [E0011] Usuário não informado.
         /// </summary>
-        internal static string UserAuthenticateUserRequired {
+        public static string UserAuthenticateUserRequired {
             get {
                 return ResourceManager.GetString("UserAuthenticateUserRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Device não está vinculado a usuário.
+        ///   Looks up a localized string similar to [E0009] Device não está vinculado a usuário.
         /// </summary>
-        internal static string UserChangePasswordDeviceDoesNotBelongToUser {
+        public static string UserChangePasswordDeviceDoesNotBelongToUser {
             get {
                 return ResourceManager.GetString("UserChangePasswordDeviceDoesNotBelongToUser", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Device não encontrado.
+        ///   Looks up a localized string similar to [E0010] Device não encontrado.
         /// </summary>
-        internal static string UserChangePasswordDeviceNotFound {
+        public static string UserChangePasswordDeviceNotFound {
             get {
                 return ResourceManager.GetString("UserChangePasswordDeviceNotFound", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Identification não informado.
+        ///   Looks up a localized string similar to [E0008] Identification não informado.
         /// </summary>
-        internal static string UserChangePasswordIdentificationRequired {
+        public static string UserChangePasswordIdentificationRequired {
             get {
                 return ResourceManager.GetString("UserChangePasswordIdentificationRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email não é válido.
+        ///   Looks up a localized string similar to [E0007] Email não é válido.
         /// </summary>
-        internal static string UserForgotPasswordEmailProper {
+        public static string UserForgotPasswordEmailProper {
             get {
                 return ResourceManager.GetString("UserForgotPasswordEmailProper", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email não informado.
+        ///   Looks up a localized string similar to [E0006] Email não informado.
         /// </summary>
-        internal static string UserForgotPasswordEmailRequired {
+        public static string UserForgotPasswordEmailRequired {
             get {
                 return ResourceManager.GetString("UserForgotPasswordEmailRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Usuário não encontrado.
+        ///   Looks up a localized string similar to [E0002] Usuário não encontrado.
         /// </summary>
-        internal static string UserNotFound {
+        public static string UserNotFound {
             get {
                 return ResourceManager.GetString("UserNotFound", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email já cadastrado.
+        ///   Looks up a localized string similar to [E0005] Email já cadastrado.
         /// </summary>
-        internal static string UserRegisterEmailAlreadyTaken {
+        public static string UserRegisterEmailAlreadyTaken {
             get {
                 return ResourceManager.GetString("UserRegisterEmailAlreadyTaken", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Senha não é válida.
+        ///   Looks up a localized string similar to [E0003] Senha não é válida.
         /// </summary>
-        internal static string UserRegisterPasswordProper {
+        public static string UserRegisterPasswordProper {
             get {
                 return ResourceManager.GetString("UserRegisterPasswordProper", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Senha não informada.
+        ///   Looks up a localized string similar to [E0004] Senha não informada.
         /// </summary>
-        internal static string UserRegisterPasswordRequired {
+        public static string UserRegisterPasswordRequired {
             get {
                 return ResourceManager.GetString("UserRegisterPasswordRequired", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Veículo não encontrado.
+        ///   Looks up a localized string similar to [E0041] Veículo não encontrado.
         /// </summary>
-        internal static string UserVehicleNotFound {
+        public static string UserVehicleNotFound {
             get {
                 return ResourceManager.GetString("UserVehicleNotFound", resourceCulture);
             }

@@ -13,13 +13,7 @@ namespace ViewT.Crediario.Domain.Tests.Unit.Main.Entities.Builders
         private string _email = null;
         private string _password = null;
         private string _serialKey = null;
-        private bool _isBlocked = false;
-        private bool _admin = false;
-        private bool _visitor = false;
-        private bool _resident = false;
-        private string _addressBlock = null;
-        private string _addressApartment = null;
-        private string _addressComplement = null;
+        private string _pushToken = null;
         private Token _token = null;
         private PersonUserStatus _personUserStatus = PersonUserStatus.Active;
 
@@ -40,15 +34,6 @@ namespace ViewT.Crediario.Domain.Tests.Unit.Main.Entities.Builders
             if (_token != null)
             {
                 person.SetToken(_token);
-            }
-
-            if (_admin)
-            {
-                person.SetAdminProfile();
-            }
-            else
-            {
-                person.RevokeAdminProfile();
             }
 
             return person;
@@ -78,25 +63,6 @@ namespace ViewT.Crediario.Domain.Tests.Unit.Main.Entities.Builders
             return this;
         }
 
-        public PersonBuilder WithAdmin(bool admin)
-        {
-            this._admin = admin;
-            return this;
-        }
-
-        public PersonBuilder WithVisitor(bool visitor)
-        {
-            this._visitor = visitor;
-            return this;
-        }
-
-        public PersonBuilder WithResident(bool resident)
-        {
-            this._resident = resident;
-            return this;
-        }
-
-
         public PersonBuilder WithToken(Token token)
         {
             this._token = token;
@@ -124,6 +90,12 @@ namespace ViewT.Crediario.Domain.Tests.Unit.Main.Entities.Builders
         public PersonBuilder WithDocumentNumber(string documentNumber)
         {
             this._documentNumber = documentNumber;
+            return this;
+        }
+
+        public PersonBuilder WithPushToken(string pushToken)
+        {
+            this._pushToken = pushToken;
             return this;
         }
 

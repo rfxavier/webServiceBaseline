@@ -83,7 +83,6 @@ namespace ViewT.Crediario.Domain.Tests.Unit.Main.Commands.Handlers
                 .And.Contain(n => n.Value == Domain.Main.Resources.Messages.UserNotFound);
 
             _mocker.GetMock<IPersonRepository>().Verify(u => u.GetBySerialKey(It.IsAny<string>()),Times.Once());
-            _mocker.GetMock<IDeviceRepository>().Verify(u => u.GetByDeviceIdentificationIncludingPerson(It.IsAny<string>()),Times.Once());
         }
 
 
@@ -118,7 +117,6 @@ namespace ViewT.Crediario.Domain.Tests.Unit.Main.Commands.Handlers
                 .And.Contain(n => n.Value == Domain.Main.Resources.Messages.UserChangePasswordDeviceNotFound);
 
             _mocker.GetMock<IPersonRepository>().Verify(u => u.GetBySerialKey(It.IsAny<string>()),Times.Once());
-            _mocker.GetMock<IDeviceRepository>().Verify(u => u.GetByDeviceIdentificationIncludingPerson(It.IsAny<string>()),Times.Once());
         }
 
 
@@ -153,7 +151,6 @@ namespace ViewT.Crediario.Domain.Tests.Unit.Main.Commands.Handlers
                 .And.Contain(n => n.Value == Domain.Main.Resources.Messages.UserChangePasswordDeviceDoesNotBelongToUser);
 
             _mocker.GetMock<IPersonRepository>().Verify(u => u.GetBySerialKey(It.IsAny<string>()),Times.Once());
-            _mocker.GetMock<IDeviceRepository>().Verify(u => u.GetByDeviceIdentificationIncludingPerson(It.IsAny<string>()),Times.Once());
         }
 
 
@@ -192,7 +189,6 @@ namespace ViewT.Crediario.Domain.Tests.Unit.Main.Commands.Handlers
                 .BeEmpty();
 
             _mocker.GetMock<IPersonRepository>().Verify(u => u.GetBySerialKey(It.IsAny<string>()), Times.Once());
-            _mocker.GetMock<IDeviceRepository>().Verify(u => u.GetByDeviceIdentificationIncludingPerson(It.IsAny<string>()), Times.Once());
         }
 
 
